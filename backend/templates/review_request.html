@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review Request</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Checker Review Screen</h2>
+
+    <p><b>Request ID:</b> {{ req["request_id"] }}</p>
+    <p><b>Customer ID:</b> {{ req["customer_id"] }}</p>
+    <p><b>Change Type:</b> {{ req["change_type"] }}</p>
+
+    <hr>
+
+    <p><b>Requested Old Name:</b> {{ req["old_value"] }}</p>
+    <p><b>Requested New Name:</b> {{ req["new_value"] }}</p>
+
+    <p><b>Extracted Old Name:</b> {{ req["extracted_old_value"] }}</p>
+    <p><b>Extracted New Name:</b> {{ req["extracted_new_value"] }}</p>
+
+    <p><b>Confidence Old:</b> {{ req["confidence_old"] }}%</p>
+    <p><b>Confidence New:</b> {{ req["confidence_new"] }}%</p>
+    <p><b>Forgery Flag:</b> {{ req["forgery_flag"] }}</p>
+    <p><b>Overall Confidence:</b> {{ req["overall_confidence"] }}%</p>
+
+    <hr>
+
+    <p><b>FileNet Reference ID:</b> {{ req["filenet_ref_id"] }}</p>
+
+    <h3>AI Summary</h3>
+    <pre>{{ req["ai_summary"] }}</pre>
+
+    <hr>
+
+    <form action="/approve/{{ req['request_id'] }}" method="POST">
+        <button type="submit" style="background:green;">Approve</button>
+    </form>
+
+    <form action="/reject/{{ req['request_id'] }}" method="POST">
+        <button type="submit" style="background:red;">Reject</button>
+    </form>
+
+    <br>
+    <a href="/checker">Back to Dashboard</a>
+
+</div>
+</body>
+</html>

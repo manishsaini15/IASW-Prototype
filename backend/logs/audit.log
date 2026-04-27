@@ -1,0 +1,37 @@
+[2026-04-27 17:54:46] New request submitted | CustomerID=12 | OldName=mahesh Saini | NewName=Manish Saini | File=Adhar_Card.jpeg
+[2026-04-27 18:07:44] [INTAKE] Request submitted | CustomerID=12 | OldName=mahesh Saini | NewName=Manish Saini
+[2026-04-27 18:07:44] [VALIDATION FAILED] Customer not found: 12
+[2026-04-27 18:08:30] [INTAKE] Request submitted | CustomerID=12 | OldName=mahesh Saini | NewName=Manish Saini
+[2026-04-27 18:08:30] [VALIDATION FAILED] Customer not found: 12
+[2026-04-27 18:09:05] [INTAKE] Request submitted | CustomerID=C001 | OldName=Manisha Saini | NewName=Manish Saini
+[2026-04-27 18:09:05] [VALIDATION PASSED] Customer exists | CustomerID=C001 | RPS_Name=Priya Sharma
+[2026-04-27 18:12:37] [INTAKE] Request submitted | CustomerID=C001 | OldName=Manisha Saini | NewName=Manish Saini
+[2026-04-27 18:12:37] [VALIDATION PASSED] Customer exists | CustomerID=C001 | RPS_Name=Priya Sharma
+[2026-04-27 18:14:13] [INTAKE] Request submitted | CustomerID=C001 | OldName=Manisha Saini | NewName=Manish Saini
+[2026-04-27 18:14:13] [VALIDATION PASSED] Customer exists | CustomerID=C001 | RPS_Name=Priya Sharma
+[2026-04-27 18:14:17] [OCR] Extracted Text: Manish Saini
+aq Tetst/ DOB: 15/10/1998
+
+7007 3553 4776
+
+AUT AaT®, AAT Tea
+[2026-04-27 18:14:17] [FORENSICS] ForgeryFlag=PASS
+[2026-04-27 18:14:17] [CONFIDENCE] Old=27.91% | New=28.24% | Overall=28.07%
+[2026-04-27 18:14:17] [SUMMARY] Recommendation=REJECT
+[2026-04-27 18:14:17] [FILENET MOCK] Archived Doc=/Users/manishsaini/Downloads/IASW_Project/backend/archived_docs/FN-20260427181417-Adhar_Card.jpeg | RefID=FN-20260427181417
+[2026-04-27 18:14:17] [DB] Inserted into pending_requests table | Status=AI_VERIFIED_PENDING_HUMAN
+[2026-04-27 18:18:36] [INTAKE] Request submitted | CustomerID=C001 | OldName=Manisha Saini | NewName=Manish Saini
+[2026-04-27 18:18:36] [VALIDATION PASSED] Customer exists | CustomerID=C001 | RPS_Name=Priya Sharma
+[2026-04-27 18:18:37] [OCR] Extracted Text: Manish Saini
+aq Tetst/ DOB: 15/10/1998
+
+7007 3553 4776
+
+AUT AaT®, AAT Tea
+[2026-04-27 18:18:37] [FORENSICS] ForgeryFlag=PASS
+[2026-04-27 18:18:37] [CONFIDENCE] Old=27.91% | New=28.24% | Overall=28.07%
+[2026-04-27 18:18:37] [SUMMARY] Recommendation=REJECT
+[2026-04-27 18:18:37] [FILENET MOCK] Archived Doc=/Users/manishsaini/Downloads/IASW_Project/backend/archived_docs/FN-20260427181837-Adhar_Card.jpeg | RefID=FN-20260427181837
+[2026-04-27 18:18:37] [DB] Inserted into pending_requests table | Status=AI_VERIFIED_PENDING_HUMAN
+[2026-04-27 18:19:42] [CHECKER APPROVED] RequestID=1 | CustomerID=C001 | Updated RPS Name=Manish Saini
+[2026-04-27 18:19:48] [CHECKER APPROVED] RequestID=2 | CustomerID=C001 | Updated RPS Name=Manish Saini
