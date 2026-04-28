@@ -6,7 +6,7 @@ It automates document verification and data validation for customer account chan
 while strictly enforcing Human-in-the-Loop (HITL) approval before updating the core system.
 
 ## Supported Flow
-✅ Legal Name Change Workflow (End-to-End)
+ Legal Name Change Workflow (End-to-End)
 
 ## Workflow Steps
 1. Staff submits name change request + uploads supporting document.
